@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  app:
+    tty: true
+    image: golang:1.12.1-stretch
+    volumes:
+      - "./:/app"
+    working_dir: "/app"
